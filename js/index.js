@@ -11,7 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", (event) => {
       const targetId = link.getAttribute("href");
 
-      if (!targetId || targetId === "#") {
+      if (!targetId) {
+        return;
+      }
+
+      if (targetId === "#") {
+        event.preventDefault();
         return;
       }
 
