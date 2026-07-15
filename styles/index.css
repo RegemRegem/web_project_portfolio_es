@@ -82,11 +82,6 @@ body {
   left: calc(50% - 160px);
 }
 
-/* Ocultamos el fondo anterior del HTML */
-.background {
-  display: none;
-}
-
 /* ==========================
    CONTAINER
 ========================== */
@@ -107,7 +102,7 @@ body {
 
 .hero__container {
   display: grid;
-  grid-template-columns: minmax(0, 793px) 387px;
+  grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
   column-gap: 20px;
   align-items: start;
 }
@@ -160,9 +155,25 @@ body {
   color: #6d6dff;
 }
 
+.hero__link--disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+
+.hero__link--disabled:hover {
+  color: inherit;
+}
+
+.hero__image {
+  width: 100%;
+  max-width: 387px;
+  justify-self: end;
+}
+
 .hero__photo {
-  width: 387px;
-  height: 500px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 387 / 500;
   object-fit: cover;
 }
 
@@ -327,6 +338,10 @@ body {
     line-height: 1;
 }
 
+.project-card__link--disabled {
+    cursor: default;
+    opacity: 0.65;
+}
 
 
 /* ==========================
@@ -346,18 +361,6 @@ body {
   display: inline-block;
   margin-bottom: 36px;
   color: #6d6dff;
-}
-
-.footer__social {
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-}
-
-.footer__social-link img {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
 }
 
 /* ==========================================================
@@ -519,9 +522,6 @@ body {
     padding-bottom: 64px;
   }
 
-  .footer__social {
-    gap: 36px;
-  }
 }
 
 /* ==========================
@@ -542,7 +542,4 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .footer__social {
-    gap: 28px;
-  }
 }

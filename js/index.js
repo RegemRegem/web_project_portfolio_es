@@ -15,11 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      if (targetId === "#") {
-        event.preventDefault();
-        return;
-      }
-
       const targetElement = document.querySelector(targetId);
 
       if (!targetElement) {

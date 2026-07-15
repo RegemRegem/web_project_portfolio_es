@@ -17,18 +17,11 @@
 
 <body>
 
-  <!-- Fondo decorativo -->
-
-  <div class="background">
-    <span class="background__glow background__glow--top"></span>
-    <span class="background__glow background__glow--bottom"></span>
-  </div>
-
   <main class="page">
 
     <!-- ================= HERO ================= -->
 
-    <section class="hero">
+    <header class="hero">
 
       <div class="container hero__container">
 
@@ -51,14 +44,15 @@
             mantener código limpio y resolver problemas de forma estructurada.
           </p>
 
-          <div class="hero__links">
+          <nav class="hero__links" aria-label="Enlaces principales">
 
-            <a href="#" class="hero__link">Descargar CV</a>
+            <span class="hero__link hero__link--disabled">CV pendiente</span>
 
             <a
-              href="https://github.com/"
+              href="https://github.com/RegemRegem"
               class="hero__link"
-              target="_blank">
+              target="_blank"
+              rel="noopener noreferrer">
 
               GitHub
 
@@ -72,7 +66,7 @@
 
             </a>
 
-          </div>
+          </nav>
 
         </div>
 
@@ -87,7 +81,7 @@
 
       </div>
 
-    </section>
+    </header>
 
     <!-- ================= SKILLS ================= -->
 
@@ -124,7 +118,6 @@
           <div class="skill">
             <img src="./icons/nodejs.svg" alt="Node.js">
           </div>
-          
 
         </div>
 
@@ -187,9 +180,10 @@
           <div class="project-card__links">
 
                 <a
-                    href="#"
-                    target="_blank"
-                    class="project-card__link">
+                  href="https://regemregem.github.io/web_project_coffeeshop_es/"
+                  class="project-card__link"
+                  target="_blank"
+                  rel="noopener noreferrer">
 
                     <img
                         src="./icons/union0.svg"
@@ -201,9 +195,10 @@
                 </a>
 
                 <a
-                    href="#"
-                    target="_blank"
-                    class="project-card__link">
+                  href="https://github.com/RegemRegem/web_project_coffeeshop_es"
+                  class="project-card__link"
+                  target="_blank"
+                  rel="noopener noreferrer">
 
                     <img
                         src="./icons/github.svg"
@@ -220,75 +215,44 @@
 
       </article>
 
-      <!-- Proyecto 2 -->
-
       <article class="project-card">
 
-            <div class="project-card__image-wrapper">
+        <div class="project-card__image-wrapper">
 
-    <img
-        src="./images/miproyecto.png"
-        alt="Mi proyecto"
-        class="project-card__image">
+          <img
+            src="./images/miproyecto.png"
+            alt="Vista previa de un proyecto futuro"
+            class="project-card__image">
 
-    <div class="project-card__stack">
+          <div class="project-card__stack">
+            <img src="./icons/javascript.svg" alt="JavaScript">
+            <img src="./icons/react.svg" alt="React">
+          </div>
 
-        <img
-            src="./icons/javascript.svg"
-            alt="JavaScript">
-
-        <img
-            src="./icons/react.svg"
-            alt="React">
-
-    </div>
-
-</div>
+        </div>
 
         <div class="project-card__body">
 
-          <h3 class="project-card__title">
-            Mi proyecto
-          </h3>
+          <h3 class="project-card__title">Mi proyecto</h3>
 
           <p class="project-card__description">
-
             Espacio reservado para futuros proyectos desarrollados con
             JavaScript, React o Node.js.
-
           </p>
 
           <div class="project-card__links">
 
-                <a
-                    href="#"
-                    target="_blank"
-                    class="project-card__link">
+            <span class="project-card__link project-card__link--disabled">
+              <img src="./icons/union0.svg" alt="" aria-hidden="true">
+              <span>Demo pendiente</span>
+            </span>
 
-                    <img
-                        src="./icons/union0.svg"
-                        alt=""
-                        aria-hidden="true">
+            <span class="project-card__link project-card__link--disabled">
+              <img src="./icons/github.svg" alt="" aria-hidden="true">
+              <span>Repositorio pendiente</span>
+            </span>
 
-                    <span>Demo en vivo</span>
-
-                </a>
-
-                <a
-                    href="#"
-                    target="_blank"
-                    class="project-card__link">
-
-                    <img
-                        src="./icons/github.svg"
-                        alt=""
-                        aria-hidden="true">
-
-                    <span>GitHub</span>
-
-                </a>
-
-            </div>
+          </div>
 
         </div>
 
@@ -321,34 +285,6 @@
         erick@email.com
 
       </a>
-
-      <div class="footer__social">
-
-        <a href="#" class="footer__social-link">
-          <img
-            src="./icons/facebook-negative0.svg"
-            alt="Facebook">
-        </a>
-
-        <a href="#" class="footer__social-link">
-          <img
-            src="./icons/instagram-negative0.svg"
-            alt="Instagram">
-        </a>
-
-        <a href="#" class="footer__social-link">
-          <img
-            src="./icons/linkedin-negative0.svg"
-            alt="LinkedIn">
-        </a>
-
-        <a href="#" class="footer__social-link">
-          <img
-            src="./icons/x-negative0.svg"
-            alt="X">
-        </a>
-
-      </div>
 
     </div>
 
